@@ -1,0 +1,181 @@
+/* Reset default margins and set basic styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+/* Body styling */
+body {
+  background-color: #f4f4f4;
+  color: #333;
+  background-image: url('photos/AI_Logo_1753475928395.png');
+  background-size: cover;
+}
+section{
+  padding-top: 70px;
+}
+
+/* HEADER BAR */
+header {
+  background-color: gold;
+  color: white;
+  padding: 10px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 70px;
+  z-index: 1000;
+}
+
+/* Top bar with menu, search, icons */
+.top-bar {
+  display: flex;
+  justify-content: space-between;
+  align-items: centre;
+}
+
+/* Hamburger menu icon */
+.menu-icon {
+  height: 30px;
+  font-size: 24px;
+  cursor: pointer;
+}
+.menu-icon img{
+  height: 30px;
+}
+
+/* Search input styling */
+.mid-header{
+  display: flex;
+  align-items: centre;
+}
+#search {
+  flex: 1;
+  height: 30px;
+  border-style: solid;
+  border-radius: 2px;
+  border-color: #000;
+  border-width: 1px;
+  box-shadow: inset 3px 3px 2px lightgray;
+}
+.search-bar::placeholder {
+  padding-left: 10px;
+  color: #000;
+  font-weight: bold;
+}
+
+/* Search and voice icons */
+
+.search-button{
+  height: 30px;
+  width: 40px;
+  margin-left: -2px;
+  border-style: solid;
+  border-radius: 2px;
+  border-color: #000;
+  border-width: 1px;
+}
+.search-button img{
+  height: 24px;
+}
+.voicesearch-button{
+  height: 30px;
+  width: 30px;
+  margin: 0 10px;
+  border-radius: 15px;
+  border-style: solid;
+  border-color: #000;
+  border: none;
+}
+.voicesearch-button img{
+  height: 20px;
+}
+.right-header{
+  display: flex;
+  align-items: centre;
+}
+.right-header img{
+  height: 50px;
+  border-radius: 4px;
+  box-shadow: 2px 2px 1px lightgray;
+}
+
+/* Dropdown navigation menu */
+nav {
+  position: fixed;
+  top: 70px;
+  left: 0;
+  display: none;
+  background-color: whitesmoke;
+}
+nav img{
+  height: 24px;
+}
+
+nav ul {
+  list-style: none;
+}
+
+nav li {
+  padding: 10px;
+  border-top: 1px solid #555;
+  cursor: pointer;
+}
+
+nav li:hover {
+  background-color: lightgray;
+}
+
+/* Main content */
+main {
+  padding: 20px;
+}
+
+.page {
+  display: none;
+}
+
+.page.active {
+  display: block;
+}
+
+/* Footer */
+footer {
+  position: fixed;
+  height: 60px;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  background-color: #222;
+  color: white;
+  text-align: center;
+  padding: 15px;
+  margin-top: none;
+}
+
+/* Social media icons fixed above footer */
+.social-icons {
+  position: fixed;
+  bottom: 60px;
+  left: 0;
+  right: 0;
+  text-align: center;
+  background-color: lightgray;
+  padding: 10px;
+}
+
+.social-icons img{
+  height: 32px;
+  margin: 0 10px;
+}
+
+.social-icons a:hover {
+  color: gold;
+  cursor: pointer;
+}
+.social-icons a{
+  text-decoration: none;
+}

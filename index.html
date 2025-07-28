@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>EMEX solutions</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- HEADER SECTION -->
+  <header>
+    <div class="top-bar">
+      <div class="left-header">
+        <img class="menu-icon"src="icons/hamburger-menu-mobile-svgrepo-com.svg" onclick="toggleMenu()">
+      </div>
+      <div class="mid-header">
+        <input class="search-bar"type="text" placeholder="search" id="search">
+        <button onclick="performSearch()"class="search-button">
+          <img src="icons/search-svgrepo-com.svg">
+        </button>
+        <button class="voicesearch-button">
+          <img src="icons/microphone-svgrepo-com.svg">
+        </button>
+      </div>
+      <div class="right-header">
+        <img src="photos/file_000000007c846230b88c3b72dc955f8a (1)_1.png">
+      </div>
+    </div>
+
+    <!-- Dropdown Menu (hidden by default) -->
+    <nav id="dropdown-menu">
+      <ul>
+        <li onclick="showPage('home')">
+          <img src="icons/home-svgrepo-com.svg">
+        </li>
+        <li onclick="showPage('products')">
+          <img src="icons/shopping-cart-23-svgrepo-com.svg">
+        </li>
+        <li onclick="showPage('about')">
+          <img src="icons/apps-svgrepo-com.svg">
+        </li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- PAGES (Only one visible at a time) -->
+  <main>
+    <!-- Home Page -->
+    <section id="home" class="page active">
+      <h1>Welcome to EMEX</h1>
+      <p>Your gateway to top deals.</p>
+    </section>
+
+    <!-- Products Page -->
+    <section id="products" class="page">
+      <h1>Products</h1>
+      <p>List of affiliate products will go here.</p>
+    </section>
+
+    <!-- About Page -->
+    <section id="about" class="page">
+      <h1>About EMEX</h1>
+      <p>EMEX is a leading affiliate marketing brand by Evarline Mathew Eugene.</p>
+    </section>
+  </main>
+
+  <!-- SOCIAL MEDIA ICONS -->
+  
+  <div class="social-icons">
+    <a href="https://facebook.com" target="_blank">
+      <img src="icons/facebook-color-svgrepo-com.svg">
+    </a>
+    <a href="https://wa.me/1234567890" target="_blank">
+      <img src="icons/whatsapp-color-svgrepo-com.svg">
+    </a>
+    <a href="https://instagram.com" target="_blank">
+      <img src="icons/instagram-1-svgrepo-com.svg">
+    </a>
+    <a href="mailto:someone@example.com">
+      <img src="icons/gmail-svgrepo-com.svg">
+    </a>
+    <a href="https://twitter.com" target="_blank">
+      <img src="icons/twitter.png">
+    </a>
+    <a href="https://tiktok.com" target="_blank">
+      <img src="icons/social-media.png">
+    </a>
+  </div>
+
+  <!-- FOOTER -->
+  <footer>
+    <p>&copy; 2025 EMEX solutions</p>
+  </footer>
+
+  <script src="web.js"></script>
+</body>
+</html>"
